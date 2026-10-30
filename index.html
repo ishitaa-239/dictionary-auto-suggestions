@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dictionary with Auto-Suggestions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div><h1>Dictionary with Auto-Suggestions</h1>
+    <p class="sub">HTML, CSS and JavaScript frontend with a C++ Trie backend.</p>
+    <div class="status off" id="status">Connecting to C++ backend…</div></div>
+  </div>
+
+  <div class="card">
+    <h2>Search &amp; auto-suggest</h2>
+    <div class="row">
+      <input id="q" placeholder="Start typing, e.g. app…" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="msg" id="searchMsg"></div>
+    <div class="meaning" id="meaning" hidden></div>
+    <ul id="sugg"></ul>
+    <div class="path" id="path"></div>
+  </div>
+
+  <div class="card">
+    <h2>Insert a word</h2>
+    <input id="add" placeholder="New word (a–z only)" autocomplete="off" autocapitalize="off" spellcheck="false">
+    <input id="addMeaning" class="gap" placeholder="Meaning (optional)" autocomplete="off">
+    <button id="addBtn" class="ghost gap">Insert</button>
+    <div class="msg" id="addMsg"></div>
+  </div>
+
+  <div class="card">
+    <h2>Delete a word</h2>
+    <div class="row">
+      <input id="del" placeholder="Word to delete" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <button id="delBtn" class="danger">Delete</button>
+    </div>
+    <div class="msg" id="delMsg"></div>
+  </div>
+
+  <div class="card">
+    <h2>All words (<span id="count">0</span>)</h2>
+    <div class="chips" id="all"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
