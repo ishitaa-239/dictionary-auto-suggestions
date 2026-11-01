@@ -1,6 +1,6 @@
 // Frontend: talks to the C++ backend (dictionary.cpp) through a small JSON API.
 // All dictionary logic (Trie insert / search / suggestions) lives in the C++ code.
-const API = "http://localhost:8080/api";
+const API = "/api";
 
 const $ = id => document.getElementById(id);
 const clean = s => s.trim().toLowerCase();
