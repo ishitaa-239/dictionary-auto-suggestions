@@ -463,7 +463,13 @@ void handleClient(socket_t client, Dictionary& dict) {
 
 int main(int argc, char* argv[]) {
     int port = 8080;
-    if (argc > 1) port = atoi(argv[1]);
+    const char* envPort = getenv("PORT");
+    if (envPort != NULL) {
+        port = atoi(envPort);
+    }
+    if (argc > 1) {
+        port = atoi(argv[1]);
+    }
 
     Dictionary dict;
 
@@ -500,7 +506,7 @@ int main(int argc, char* argv[]) {
 
     sockaddr_in addr;
     addr.sin_family = AF_INET;
-    addr.sin_addr.s_addr = inet_addr("127.0.0.1");   // only this computer can connect
+    addr.sin_addr.s_addr = htonl(INADDR_ANY);
     addr.sin_port = htons((unsigned short)port);
     for (size_t i = 0; i < sizeof(addr.sin_zero); i++) addr.sin_zero[i] = 0;
 
