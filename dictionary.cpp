@@ -474,16 +474,54 @@ int main(int argc, char* argv[]) {
     Dictionary dict;
 
     // Initial dictionary words
-    dict.insert("apple", "A round fruit with red, green or yellow skin that grows on a tree.");
-    dict.insert("application", "A formal request, or a software program designed for a particular task.");
-    dict.insert("apply", "To make a formal request, or to put something to practical use.");
-    dict.insert("appreciate", "To recognize the value of something, or to be thankful for it.");
-    dict.insert("banana", "A long curved fruit with yellow skin and soft sweet flesh.");
-    dict.insert("ball", "A round object used in games and sports.");
-    dict.insert("bat", "A wooden club used to hit a ball, or a small flying mammal.");
-    dict.insert("cat", "A small domesticated animal kept as a pet.");
-    dict.insert("computer", "An electronic machine that stores and processes data.");
-    dict.insert("code", "A set of instructions written for a computer, or a system of symbols.");
+    // Additional dictionary words
+dict.insert("about", "On the subject of something; concerning.");
+dict.insert("above", "At a higher level or position.");
+dict.insert("absent", "Not present at a particular place.");
+dict.insert("achieve", "To successfully reach a goal.");
+dict.insert("action", "The process of doing something.");
+
+dict.insert("beautiful", "Having qualities that give pleasure to the senses.");
+dict.insert("believe", "To accept something as true.");
+dict.insert("benefit", "An advantage or positive result.");
+dict.insert("brave", "Ready to face danger or difficulty.");
+dict.insert("bright", "Giving out or reflecting much light.");
+
+dict.insert("challenge", "A difficult task that tests someone's abilities.");
+dict.insert("change", "To make or become different.");
+dict.insert("choice", "An act of selecting between alternatives.");
+dict.insert("clever", "Quick to understand and learn.");
+dict.insert("confidence", "The feeling of being sure about yourself.");
+
+dict.insert("danger", "The possibility of harm or injury.");
+dict.insert("decision", "A choice made after considering different options.");
+dict.insert("develop", "To grow or improve over time.");
+dict.insert("different", "Not the same as another thing.");
+dict.insert("discover", "To find something new or unknown.");
+
+dict.insert("education", "The process of learning and gaining knowledge.");
+dict.insert("effort", "Physical or mental energy used to do something.");
+dict.insert("energy", "The ability to do work.");
+dict.insert("environment", "The surroundings in which living things exist.");
+dict.insert("excellent", "Extremely good or outstanding.");
+
+dict.insert("famous", "Known by many people.");
+dict.insert("freedom", "The ability to act or speak without unnecessary restrictions.");
+dict.insert("friendly", "Kind and pleasant towards others.");
+dict.insert("future", "The time that is yet to come.");
+dict.insert("generous", "Willing to give or share with others.");
+
+dict.insert("happiness", "The state of feeling happy or satisfied.");
+dict.insert("honest", "Truthful and sincere.");
+dict.insert("imagine", "To form a picture or idea in your mind.");
+dict.insert("important", "Having great value or significance.");
+dict.insert("knowledge", "Information and understanding gained through learning.");
+
+dict.insert("language", "A system of communication using words and symbols.");
+dict.insert("nature", "The physical world, including plants and animals.");
+dict.insert("success", "The achievement of a desired goal.");
+dict.insert("technology", "The application of scientific knowledge for practical purposes.");
+dict.insert("wonderful", "Extremely good, enjoyable or impressive.");
 
 #ifdef _WIN32
     WSADATA wsa;
